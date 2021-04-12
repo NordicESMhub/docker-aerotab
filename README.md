@@ -23,7 +23,7 @@ docker exec -it 8d6 bash
 ```
 ### and make the scripts executable
 ```
-chmod ugo+rwx create_*
+chmod ugo+rwx /opt/uio/create_*
 ```
 ### to create:
 
