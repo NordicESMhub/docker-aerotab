@@ -21,7 +21,10 @@ docker run -td -v $HOME/archive:/opt/uio/archive quay.io/nordicesmhub/docker-aer
 ```
 docker exec -it 8d6 bash
 ```
-
+### and make the scripts executable
+```
+chmod ugo+rwx create_*
+```
 ### to create:
 
 #### the short wavelengths look-up tables
