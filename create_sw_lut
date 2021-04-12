@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Extract AeroTab code
+cp -r /opt/uio/my_sandbox/tools/AeroTab /opt/uio/archive
+
+# Optics LUTs SW
+cd /opt/uio/archive/AeroTab
+make
+./AeroTab

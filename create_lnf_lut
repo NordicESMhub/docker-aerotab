@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Extract AeroTab code
+cp -r /opt/uio/my_sandbox/tools/AeroTab /opt/uio/archive
+
+# Lognormal fit LUTs
+cd /opt/uio/archive/AeroTab
+sed -i -e '141 s/iopt=1/iopt=0/' AeroTab.f
+make
+./AeroTab
